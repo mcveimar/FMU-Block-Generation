@@ -1,0 +1,17 @@
+-IC:/MATLAB/FMU_lib/DC_ctrl/test_harness/slprj/sim/PF_core_control
+-IC:/MATLAB/FMU_lib/DC_ctrl/test_harness/slprj/sim/CB_core_control
+-IC:/MATLAB/FMU_lib/DC_ctrl/test_harness/slprj/sim/LC_core_control
+-IC:/MATLAB/FMU_lib/DC_ctrl/test_harness/slprj/sim/I_core_limit
+-IC:/MATLAB/FMU_lib/DC_ctrl/test_harness/slprj/sim/HC_core_demand
+-IC:/MATLAB/FMU_lib/DC_ctrl/test_harness/slprj/sim/HC_core_control
+-IC:/MATLAB/FMU_lib/DC_ctrl/test_harness/slprj/sim/HC_core_compensation
+-IC:/MATLAB/FMU_lib/DC_ctrl/test_harness/slprj/sim/HC_core_compensation_all
+-IC:/MATLAB/FMU_lib/DC_ctrl/test_harness/slprj/sim/DC_core_control
+-IC:/MATLAB/FMU_lib/DC_ctrl/test_harness
+-IC:/MATLAB/FMU_lib/DC_ctrl/test_harness/slprj/sim/SH_core_control
+-IC:/Program\ Files/MATLAB/R2023b/extern/include
+-IC:/Program\ Files/MATLAB/R2023b/simulink/include
+-IC:/Program\ Files/MATLAB/R2023b/rtw/c/src
+-IC:/Program\ Files/MATLAB/R2023b/rtw/c/src/ext_mode/common
+-IC:/Program\ Files/MATLAB/R2023b/rtw/c/ert
+-IC:/MATLAB/FMU_lib/DC_ctrl/test_harness/slprj/sim/_sharedutils

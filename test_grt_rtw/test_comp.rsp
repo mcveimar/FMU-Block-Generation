@@ -1,0 +1,6 @@
+﻿-I"C:\Users\Veimar\thirdequation.com\TNEI Model - Documents\MATLAB\FMU_lib"
+-I"C:\Users\Veimar\thirdequation.com\TNEI Model - Documents\MATLAB\FMU_lib\test_grt_rtw"
+-I"C:\Program Files\MATLAB\R2023b\extern\include"
+-I"C:\Program Files\MATLAB\R2023b\simulink\include"
+-I"C:\Program Files\MATLAB\R2023b\rtw\c\src"
+-I"C:\Program Files\MATLAB\R2023b\rtw\c\src\ext_mode\common"

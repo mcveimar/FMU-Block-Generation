@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<fmiModelDescription fmiVersion="2.0" generationDateAndTime="2024-02-29T19:31:01Z" generationTool="Simulink (R2023b)" guid="{77a92a8e-1ccd-bcd9-b533-15be5c55f790}" modelName="SH_control" numberOfEventIndicators="0" variableNamingConvention="structured" version="1.39">
+  <CoSimulation canBeInstantiatedOnlyOncePerProcess="true" canGetAndSetFMUstate="false" canHandleVariableCommunicationStepSize="false" canNotUseMemoryManagementFunctions="true" canSerializeFMUstate="false" modelIdentifier="SH_control"/>
+  <DefaultExperiment startTime="0" stepSize="0.00026667"/>
+  <VendorAnnotations>
+    <Tool name="Simulink">
+      <Simulink>
+        <ImportCompatibility FMUProduct="standalone FMU" requireMATLABOnPath="no" requireRelease="all"/>
+        <SimulinkModelInterface>
+          <Inport blockPath="SH_control/LD_current_d" dataType="double" dimension="[3]" portName="LD_current_d" portNumber="1" sampleTime="[0.00853344          0]" uniquePortName="LD_current_d" unit=""/>
+          <Inport blockPath="SH_control/BalanceEnable" dataType="int32" dimension="[1]" portName="BalanceEnable" portNumber="2" sampleTime="[0.00853344          0]" uniquePortName="BalanceEnable" unit=""/>
+          <Inport blockPath="SH_control/PowerFactorEnable" dataType="int32" dimension="[1]" portName="PowerFactorEnable" portNumber="3" sampleTime="[0.00853344          0]" uniquePortName="PowerFactorEnable" unit=""/>
+          <Inport blockPath="SH_control/vdc_target" dataType="double" dimension="[1]" portName="vdc_target" portNumber="4" sampleTime="[0.00026667          0]" uniquePortName="vdc_target" unit=""/>
+          <Inport blockPath="SH_control/vdc_sum" dataType="double" dimension="[1]" portName="vdc_sum" portNumber="5" sampleTime="[0.00026667          0]" uniquePortName="vdc_sum" unit=""/>
+          <Inport blockPath="SH_control/LD_current_q" dataType="double" dimension="[3]" portName="LD_current_q" portNumber="6" sampleTime="[0.00853344          0]" uniquePortName="LD_current_q" unit=""/>
+          <Inport blockPath="SH_control/ShuntEnable" dataType="int32" dimension="[1]" portName="ShuntEnable" portNumber="7" sampleTime="[0.00026667          0]" uniquePortName="ShuntEnable" unit=""/>
+          <Inport blockPath="SH_control/SH_Current_d" dataType="double" dimension="[3]" portName="SH_Current_d" portNumber="8" sampleTime="[0.00026667          0]" uniquePortName="SH_Current_d" unit=""/>
+          <Inport blockPath="SH_control/SH_Currentr_q" dataType="double" dimension="[3]" portName="SH_Currentr_q" portNumber="9" sampleTime="[0.00026667          0]" uniquePortName="SH_Currentr_q" unit=""/>
+          <Inport blockPath="SH_control/LCL_CapCurrent_d" dataType="double" dimension="[3]" portName="LCL_CapCurrent_d" portNumber="10" sampleTime="[0.00026667          0]" uniquePortName="LCL_CapCurrent_d" unit=""/>
+          <Inport blockPath="SH_control/LCL_CapCurrent_q" dataType="double" dimension="[3]" portName="LCL_CapCurrent_q" portNumber="11" sampleTime="[0.00026667          0]" uniquePortName="LCL_CapCurrent_q" unit=""/>
+          <Inport blockPath="SH_control/LD_Voltager_d" dataType="double" dimension="[3]" portName="LD_Voltager_d" portNumber="12" sampleTime="[0.00026667          0]" uniquePortName="LD_Voltager_d" unit=""/>
+          <Inport blockPath="SH_control/LD_Voltage_q" dataType="double" dimension="[3]" portName="LD_Voltage_q" portNumber="13" sampleTime="[0.00026667          0]" uniquePortName="LD_Voltage_q" unit=""/>
+          <Outport blockPath="SH_control/volt_req_d" dataType="double" dimension="[3]" portName="volt_req_d" portNumber="1" sampleTime="[0.00026667          0]" uniquePortName="volt_req_d" unit=""/>
+          <Outport blockPath="SH_control/vol_req_q" dataType="double" dimension="[3]" portName="vol_req_q" portNumber="2" sampleTime="[0.00026667          0]" uniquePortName="vol_req_q" unit=""/>
+        </SimulinkModelInterface>
+      </Simulink>
+    </Tool>
+  </VendorAnnotations>
+  <ModelVariables>
+    <ScalarVariable causality="input" description="LD_current_d(1)" name="LD_current_d[1]" valueReference="0" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 1-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LD_current_d(2)" name="LD_current_d[2]" valueReference="1" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 2-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LD_current_d(3)" name="LD_current_d[3]" valueReference="2" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 3-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="BalanceEnable" name="BalanceEnable" valueReference="0" variability="discrete">
+      <Integer start="0"/>
+      <!--Index = 4-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="PowerFactorEnable" name="PowerFactorEnable" valueReference="1" variability="discrete">
+      <Integer start="0"/>
+      <!--Index = 5-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="vdc_target" name="vdc_target" valueReference="3" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 6-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="vdc_sum" name="vdc_sum" valueReference="4" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 7-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LD_current_q(1)" name="LD_current_q[1]" valueReference="5" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 8-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LD_current_q(2)" name="LD_current_q[2]" valueReference="6" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 9-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LD_current_q(3)" name="LD_current_q[3]" valueReference="7" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 10-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="ShuntEnable" name="ShuntEnable" valueReference="2" variability="discrete">
+      <Integer start="0"/>
+      <!--Index = 11-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="SH_Current_d(1)" name="SH_Current_d[1]" valueReference="8" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 12-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="SH_Current_d(2)" name="SH_Current_d[2]" valueReference="9" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 13-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="SH_Current_d(3)" name="SH_Current_d[3]" valueReference="10" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 14-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="SH_Currentr_q(1)" name="SH_Currentr_q[1]" valueReference="11" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 15-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="SH_Currentr_q(2)" name="SH_Currentr_q[2]" valueReference="12" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 16-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="SH_Currentr_q(3)" name="SH_Currentr_q[3]" valueReference="13" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 17-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LCL_CapCurrent_d(1)" name="LCL_CapCurrent_d[1]" valueReference="14" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 18-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LCL_CapCurrent_d(2)" name="LCL_CapCurrent_d[2]" valueReference="15" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 19-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LCL_CapCurrent_d(3)" name="LCL_CapCurrent_d[3]" valueReference="16" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 20-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LCL_CapCurrent_q(1)" name="LCL_CapCurrent_q[1]" valueReference="17" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 21-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LCL_CapCurrent_q(2)" name="LCL_CapCurrent_q[2]" valueReference="18" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 22-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LCL_CapCurrent_q(3)" name="LCL_CapCurrent_q[3]" valueReference="19" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 23-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LD_Voltager_d(1)" name="LD_Voltager_d[1]" valueReference="20" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 24-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LD_Voltager_d(2)" name="LD_Voltager_d[2]" valueReference="21" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 25-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LD_Voltager_d(3)" name="LD_Voltager_d[3]" valueReference="22" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 26-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LD_Voltage_q(1)" name="LD_Voltage_q[1]" valueReference="23" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 27-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LD_Voltage_q(2)" name="LD_Voltage_q[2]" valueReference="24" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 28-->
+    </ScalarVariable>
+    <ScalarVariable causality="input" description="LD_Voltage_q(3)" name="LD_Voltage_q[3]" valueReference="25" variability="continuous">
+      <Real start="0"/>
+      <!--Index = 29-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="volt_req_d(1)" initial="calculated" name="volt_req_d[1]" valueReference="26" variability="continuous">
+      <Real/>
+      <!--Index = 30-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="volt_req_d(2)" initial="calculated" name="volt_req_d[2]" valueReference="27" variability="continuous">
+      <Real/>
+      <!--Index = 31-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="volt_req_d(3)" initial="calculated" name="volt_req_d[3]" valueReference="28" variability="continuous">
+      <Real/>
+      <!--Index = 32-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="vol_req_q(1)" initial="calculated" name="vol_req_q[1]" valueReference="29" variability="continuous">
+      <Real/>
+      <!--Index = 33-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="vol_req_q(2)" initial="calculated" name="vol_req_q[2]" valueReference="30" variability="continuous">
+      <Real/>
+      <!--Index = 34-->
+    </ScalarVariable>
+    <ScalarVariable causality="output" description="vol_req_q(3)" initial="calculated" name="vol_req_q[3]" valueReference="31" variability="continuous">
+      <Real/>
+      <!--Index = 35-->
+    </ScalarVariable>
+    <ScalarVariable causality="independent" description="time" name="time" valueReference="32" variability="continuous">
+      <Real/>
+      <!--Index = 36-->
+    </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Outputs>
+      <Unknown index="30"/>
+      <Unknown index="31"/>
+      <Unknown index="32"/>
+      <Unknown index="33"/>
+      <Unknown index="34"/>
+      <Unknown index="35"/>
+    </Outputs>
+    <InitialUnknowns>
+      <Unknown index="30"/>
+      <Unknown index="31"/>
+      <Unknown index="32"/>
+      <Unknown index="33"/>
+      <Unknown index="34"/>
+      <Unknown index="35"/>
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>
